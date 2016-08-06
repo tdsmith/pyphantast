@@ -5,7 +5,7 @@ exec(compile(open(versionfile, 'rb').read(), versionfile, 'exec'))
 
 setup(
     name='pyphantast',
-    version=__version__,
+    version=__version__,  # noqa
     url='https://github.com/tdsmith/ijroi',
     license='MIT',
     author='Tim D. Smith',
@@ -18,8 +18,7 @@ setup(
         'Intended Audience :: Science/Research',
         'Topic :: Scientific/Engineering',
         'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.4'
+        'Programming Language :: Python :: 3.5'
     ],
     install_requires=['numpy', 'scipy'],
     entry_points={'console_scripts': ['phantast=phantast.__main__:main']},
