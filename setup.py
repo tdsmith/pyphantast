@@ -22,4 +22,5 @@ setup(
         'Programming Language :: Python :: 3.4'
     ],
     install_requires=['numpy', 'scipy'],
+    entry_points={'console_scripts': ['phantast=phantast.__main__:main']},
 )
